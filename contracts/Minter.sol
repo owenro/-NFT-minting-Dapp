@@ -48,4 +48,7 @@ contract Minter is ERC721Enumerable {
     function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
+    function getMintprice() public view returns (uint256){
+        return mintPrice;
+    }
 }
